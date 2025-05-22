@@ -8,9 +8,9 @@ export const AppDataSource = new DataSource({
     username: "root",
     password: "123456",
     database: "auth_db",
-    entities: [__dirname + "/**/*.entity{.ts,.js}"], // Padrão para encontrar todas as entidades
-    migrations: [__dirname + "/migration/*{.ts,.js}"], // Padrão para migrações
-    synchronize: false, // Importante manter como false quando usando migrações
-    logging: true, // Habilitar para ver queries no console (pode desativar em produção)
-    migrationsRun: true, // Executa migrações automaticamente ao iniciar
+    entities: [__dirname + "/**/*.entity{.ts,.js}"], 
+    migrations: [__dirname + "/migration/*{.ts,.js}"], 
+    synchronize: false, 
+    logging: true, 
+    migrationsRun: true, 
 });

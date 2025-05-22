@@ -13,7 +13,7 @@ export class Artigo {
   conteudo: string;
 
   @Column({ nullable: true })
-  imagem: string; // URL da imagem
+  imagem: string; 
 
   @ManyToOne(() => User, (user) => user.artigos)
   @JoinColumn({ name: 'autor_id' })

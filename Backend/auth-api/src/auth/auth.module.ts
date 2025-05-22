@@ -10,7 +10,7 @@ import { JwtAuthGuard } from './jwt-auth.guard';
   imports: [
     TypeOrmModule.forFeature([User]),
     JwtModule.register({
-      secret: 'SUA_CHAVE_SECRETA', // ideal usar variável de ambiente
+      secret: 'SUA_CHAVE_SECRETA', 
       signOptions: { expiresIn: '1h' },
     }),
   ],
@@ -19,7 +19,7 @@ import { JwtAuthGuard } from './jwt-auth.guard';
   exports: [
     JwtAuthGuard,
     TypeOrmModule,
-    JwtModule, // <-- Exportar o JwtModule aqui
+    JwtModule, 
   ],
 })
 export class AuthModule {}
